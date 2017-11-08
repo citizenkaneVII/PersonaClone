@@ -3,27 +3,79 @@ PersonaClone Readme
 The goal is to creat code that will allow the different objects in the scene to interact in a way that is similar
 to Persona 4.  This will include:
 
--A dungeon level.  This is where the player starts and can move around.  In the
-    dungeon state, the player can move around, attack/be attacked by the enemy,
-    and open treasure chests.
 
--A battlefield level that is only entered when either the player or the ememy
-    attacks successfully first.  The two objects will exchange attack until one
-    or the other dies.  If the player dies, Game Over.  If the player wins, they
-    will be returned to the dungeon level and allowed to enter the Endlevel
-    check point.
 
--A Player using WASD keys for direction in a 3d space
+Levels
+    -A dungeon entrance Level.  This will feature a fixed camera that follows the players movements,
+        but does not move it's self.  The Entrance will feature a point the player can approch,
+        click on and enter.
 
--Enemy that wanders.  Chase is activated when player get's close.
-    The enemy will try to atack the player before the player can
-    attack it.  Depending on who attacks first will determin if the
-    battle starts with a Player Advantage, Enemy Advantage, or Neither.
-    (Use case or if/then statements)
+    -A dungeon level.  This is where the player starts and can move around.  In the
+        dungeon state, the player can move around, attack/be attacked by the enemy,
+        and open treasure chests.
 
--A treasure chest that opens when the player clicks on it.
-    It will give the player a power up that can be used in the Battlefield state.
+    -A battlefield level that is only entered when either the player or the ememy
+        attacks successfully first.  The two objects will exchange attack until one
+        or the other dies.  If the player dies, Game Over.  If the player wins, they
+        will be returned to the dungeon level and allowed to enter the Endlevel
+        check point.
 
--UI featuring health, enemie's health, aquirement of items, and battlefield options
 
--End Level Check point
+Chracters
+    -A Player using WASD keys for direction in a 3d space
+
+    -Enemies that wander.  Chase is activated when player get's close.
+        The enemy will try to atack the player before the player can
+        attack it.  Depending on who attacks first will determin if the
+        battle starts with a Player Advantage, Enemy Advantage, or Neither.
+        (Use case or if/then statements)  There will be three.  The first two won't 
+        be too hard, but the last will be the Boss with more hp, powerful attack, etc.
+
+
+GameObjects (Non AI objects that can be interacted with)
+    -A treasure chest that opens when the player clicks on it.
+        It will give the player a power up that can be used in the Battlefield state.
+
+    -Doors, bring player to next part of the level
+
+    -Dungeon save/check point
+
+    -End Level check point
+
+
+UI
+    -Health Bar
+
+    -Enemy Health Bar
+
+    -Attack Menu
+
+    -Game over screen
+
+    -Interactive popups:
+            treasure, dungeon entrance, door, checkpoint
+
+    -Victory screen
+
+
+
+
+We'll need a lot of code scripts for these.  All the things we have to program:
+    -Level Manager
+    -UI/interaction
+    -Enemy AI
+    -Character Controller
+    -Interaction for doors, treasure (OpenObject)
+    -Potion
+    -Savepoint
+    -Gameover conditions (win or loose)
+
+
+
+The Battlefield will be the most difficult to program.  The enemies will be able to attack.  The Boss will be able to attack and recover.
+The Player will be able to attack, escape, and use item (the only item option will be a potion).
+
+
+
+
+
