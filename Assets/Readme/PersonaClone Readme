@@ -1,0 +1,29 @@
+PersonaClone Readme
+
+The goal is to creat code that will allow the different objects in the scene to interact in a way that is similar
+to Persona 4.  This will include:
+
+-A dungeon level.  This is where the player starts and can move around.  In the
+    dungeon state, the player can move around, attack/be attacked by the enemy,
+    and open treasure chests.
+
+-A battlefield level that is only entered when either the player or the ememy
+    attacks successfully first.  The two objects will exchange attack until one
+    or the other dies.  If the player dies, Game Over.  If the player wins, they
+    will be returned to the dungeon level and allowed to enter the Endlevel
+    check point.
+
+-A Player using WASD keys for direction in a 3d space
+
+-Enemy that wanders.  Chase is activated when player get's close.
+    The enemy will try to atack the player before the player can
+    attack it.  Depending on who attacks first will determin if the
+    battle starts with a Player Advantage, Enemy Advantage, or Neither.
+    (Use case or if/then statements)
+
+-A treasure chest that opens when the player clicks on it.
+    It will give the player a power up that can be used in the Battlefield state.
+
+-UI featuring health, enemie's health, aquirement of items, and battlefield options
+
+-End Level Check point
