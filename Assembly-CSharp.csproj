@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Potion.cs" />
      <Compile Include="Assets\Scripts\Savepoint.cs" />
+     <Compile Include="Assets\Scripts\TurnBasedCombat\TurnBasedCombatStateMachine.cs" />
      <Compile Include="Assets\Scripts\UI.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
